@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KubeRoot</title>
+<meta name="description" content="Open-source, cross-platform desktop client for Kubernetes.">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1b1f24;
+  --muted: #59636e;
+  --border: #d8dee4;
+  --accent: #326ce5;
+  --badge-bg: #fff8e1;
+  --badge-fg: #7a5200;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --fg: #e6e8eb;
+    --muted: #9aa4af;
+    --border: #2a3038;
+    --accent: #5b8cff;
+    --badge-bg: #3a2f10;
+    --badge-fg: #f5d48a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 4rem 16px 3rem;
+}
+h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 .5rem; letter-spacing: -.02em; }
+.tagline { font-size: 1.25rem; color: var(--muted); margin: 0 0 1.5rem; }
+.status {
+  display: inline-block;
+  padding: .25rem .75rem;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  font-size: .9rem;
+  font-weight: 600;
+}
+a { color: var(--accent); }
+ul.links { list-style: none; padding: 0; margin: 2rem 0; display: flex; flex-wrap: wrap; gap: .75rem; }
+ul.links a {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+ul.links a:hover, ul.links a:focus-visible { background: var(--accent); color: var(--bg); }
+code { overflow-wrap: anywhere; }
+footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>KubeRoot</h1>
+  <p class="tagline">Open-source, cross-platform desktop client for Kubernetes.</p>
+  <p class="status">Early development &middot; not yet released</p>
+  <p>KubeRoot is being built in the open in Go. There are no releases yet, so there is nothing to download. Follow along or contribute on GitHub.</p>
+  <ul class="links">
+    <li><a href="https://github.com/bhatnagar-afk-dev/kuberoot">GitHub repository</a></li>
+    <li><a href="https://github.com/bhatnagar-afk-dev/kuberoot#readme">README</a></li>
+  </ul>
+  <footer>
+    <p>KubeRoot is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
